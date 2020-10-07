@@ -16,13 +16,13 @@
 首先，我们要先用*typedef*来定义一个类型叫Item.
 
 ```c++
-            typedef std::string Item;		// 这里的std::string可以改为任何你想改成的类型（甚至是自定义的类）
+typedef std::string Item;		// 这里的std::string可以改为任何你想改成的类型（甚至是自定义的类）
 ```
 
 当然，要引用*iostream*库
 
 ```c++
-            #include <iostream>
+#include <iostream>
 ```
 
 注：*iostream*库间接包含*std::string*，所以引用*iostream*就无需引用*string*库了。
@@ -30,7 +30,7 @@
 然后，我们定义一个宏名叫*maxN*
 
 ```c++
-            #define maxN 1010		// maxN用于类的构造函数，这里先不赘述
+#define maxN 1010		// maxN用于类的构造函数，这里先不赘述
 ```
 
 接下来，我们就要明确*mystack*类需要满足哪些要求：
